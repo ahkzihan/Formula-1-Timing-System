@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Races</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/races.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>KIT214/514 Formula 1 Timing App</h1>
+        <nav>
+            <a href="drivers.html">Drivers</a>
+            <a href="cars.html" >Cars</a>
+            <a href="tracks.html">Tracks</a>
+            <a href="races.html" class="active">Races</a>
+            <a href="scraper.html">Track Scraper</a>
+        </nav>
+    </header>
+
+    <main>
+        <button onclick="fetchRaces()">Fetch Races</button>
+        <div id="racesList" class="list">
+            <!-- Races will be dynamically loaded here -->
+        </div>
+    </main>
+</body>
+</html>

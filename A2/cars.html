@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars Management</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/cars.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>KIT214/514 Formula 1 Timing App</h1>
+        <nav>
+            <a href="drivers.html">Drivers</a>
+            <a href="cars.html" class="active">Cars</a>
+            <a href="tracks.html">Tracks</a>
+            <a href="races.html">Races</a>
+            <a href="scraper.html">Track Scraper</a>
+        </nav>
+    </header>
+    
+    <main>
+        
+        <button class="fetch-button" onclick="fetchCars()">Fetch Cars</button>
+        <button class="fetch-button" onclick="openInvalidRecord()">Open Invalid Record</button>
+        <div id="carsList" class="list"></div>
+    </main>
+    
+    <button class="add-button "onclick="window.location.href='create_car.html'">+</button>
+</body>
+</html>

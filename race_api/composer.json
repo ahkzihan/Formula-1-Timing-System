@@ -1,0 +1,6 @@
+{
+    "require": {
+        "daandesmedt/phpheadlesschrome": "^1.1",
+        "guzzlehttp/guzzle": "^7.9"
+    }
+}

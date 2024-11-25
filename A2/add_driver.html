@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Driver</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/add_driver.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="drivers.html">Back</a>
+        <h1>Add Driver</h1>
+    </header>
+
+    <div class="container">
+            <br>
+            <form id="addDriverForm" onsubmit="addDriver(event)">
+            <label for="driverName">Name</label>
+            <input type="text" id="driverName" placeholder="Driver Name" required>
+            <br>
+            <br>
+            <label for="driverNumber">Number</label>
+            <input type="number" id="driverNumber" placeholder="Driver Number" required>
+            <br>
+            <br>
+            <label for="driverShortName">Short Name</label>
+            <input type="text" id="driverShortName" placeholder="Short Name" required>
+            <br>
+            <br>
+            <label for="driverSkillStreet">Skills: Street Tracks</label>
+            <input type="number" id="driverSkillStreet" placeholder="Street Track Skill (0-100)" required>
+            <br>
+            <br>
+            <label for="driverSkillRace">Skills: Race Tracks</label>
+            <input type="number" id="driverSkillRace" placeholder="Race Track Skill (0-100)" required>
+            <br>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracks</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/tracks.js" defer></script>
+</head>
+<body>
+    <header>
+         <h1>KIT214/514 Formula 1 Timing App</h1>
+        <nav>
+            <a href="drivers.html">Drivers</a>
+            <a href="cars.html">Cars</a>
+            <a href="tracks.html" class="active">Tracks</a>
+            <a href="races.html">Races</a>
+            <a href="scraper.html">Track Scraper</a>
+        </nav>
+
+    </header>
+
+    <main>
+        <button class="fetch-button" onclick="fetcTrackss()">Fetch Tracks</button>
+        <button class="fetch-button" onclick="openInvalidRecord()">Open Invalid Record</button>
+
+        
+        <div id="tracksList" class="list">
+            <!-- Tracks will be dynamically loaded here -->
+        </div>
+    </main>
+   <button class="add-button" onclick="window.location.href='add_track.html'">+</button>
+
+</body>
+</html>

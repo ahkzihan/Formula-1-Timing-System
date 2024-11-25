@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# Allow requests to existing files and directories
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Route all other requests to index.php (or your main controller file)
+RewriteRule ^(.*)$ index.php [QSA,L]
+
+

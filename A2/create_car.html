@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Car</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/create_car.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="cars.html">&larr; Back</a>
+        <h2>Add Car</h2>
+    </header>
+
+    <main>
+        <div class="form-group">
+            <button onclick="selectDriver()">Select Driver</button>
+            <button onclick="clearDriver()">Clear Driver</button>
+            <span id="selectedDriver">Driver: Not selected</span>
+        </div>
+
+        <div class="form-group">
+            <label for="suitabilityStreet">Suitability: Street Tracks</label>
+            <input type="number" id="suitabilityStreet" min="0" max="100" value="50" onchange="updateRaceSuitability()">
+        </div>
+
+        <div class="form-group">
+            <label for="suitabilityRace">Suitability: Race Tracks</label>
+            <input type="number" id="suitabilityRace" min="0" max="100" value="50" onchange="updateStreetSuitability()">
+        </div>
+
+        <div class="form-group">
+            <label for="reliability">Reliability</label>
+            <input type="number" id="reliability" min="0" max="100" value="50">
+        </div>
+
+        <button onclick="submitCar()">Submit</button>
+    </main>
+</body>
+</html>

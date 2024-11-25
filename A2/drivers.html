@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drivers</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/drivers.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>KIT214/514 Formula 1 Timing App</h1>
+        <nav>
+            <a href="drivers.html" class="active">Drivers</a>
+            <a href="cars.html">Cars</a>
+            <a href="tracks.html">Tracks</a>
+            <a href="races.html">Races</a>
+            <a href="track_scraper.html">Track Scraper</a>
+        </nav>
+    </header>
+
+    <main>
+        
+        <button class="fetch-button" onclick="fetchDriversrs()">Fetch Drivers</button>
+        <button class="fetch-button" onclick="openInvalidRecord()">Open Invalid Record</button>
+
+          <div id="driversList" class="list">
+            <!-- Driver items will be dynamically inserted here -->
+        </div>
+     </main>
+     <button class="add-button" onclick="openAddDriverModal()">+</button>
+
+</body>
+</html>

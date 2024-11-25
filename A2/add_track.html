@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Track</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/add_track.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="tracks.html">&larr; Back</a>
+        <h2>Add Track</h2>
+    </header>
+
+    <main>
+        <form id="addTrackForm" onsubmit="addTrack(event)">
+            <div class="form-group">
+                <label for="trackName">Track Name</label>
+                <input type="text" id="trackName" placeholder="Track Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="trackType">Track Type</label>
+                <select id="trackType" required>
+                    <option value="race">Race Track</option>
+                    <option value="street">Street Track</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="trackLaps">Total Laps</label>
+                <input type="number" id="trackLaps" min="1" placeholder="Total Laps" required>
+            </div>
+
+            <div class="form-group">
+                <label for="baseLapTime">Base Lap Time (seconds)</label>
+                <input type="number" id="baseLapTime" step="0.001" placeholder="Base Lap Time" required>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
